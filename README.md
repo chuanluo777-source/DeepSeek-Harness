@@ -2,6 +2,21 @@
 
 Windows 桌面上的 DeepSeek Harness 一键启动器：**双击图标即可打开使用**，无需每次打开终端输入命令。
 
+## 快速开始（下载后怎么打开）
+
+1. **解压** zip 到任意固定位置（如 `D:\DeepSeek-Harness`，不要放临时目录）
+2. **安装 Node.js**（如电脑还没有）：到 https://nodejs.org 下载 LTS 版，一路默认安装即可。
+   若 Node 装在非默认路径，用记事本打开 `run-server.cmd`，修改第 2 行的 `NODE` 路径
+3. **双击 `DeepSeek Harness.cmd`**：
+   - 首次启动会自动联网下载安装 DeepSeek Harness 本体（需几分钟，之后就是秒开）
+   - 启动完成后自动打开界面（Chrome 独立窗口，无地址栏）
+4. 建议右键 `DeepSeek Harness.cmd` → 发送到 → 桌面快捷方式，以后双击快捷方式即可
+
+停止服务：双击 `停止 DeepSeek Harness.cmd`，或直接关闭任务栏里最小化的「DeepSeek Harness Server」窗口。
+
+> ⚠️ **需要一个 AI 模型 API Key**：界面能打开，但要真正对话，需要在界面设置里
+> 填入你自己的 API Key（例如 DeepSeek 开放平台的 key）。Key 是个人账号的，无法共用。
+
 ## 功能
 
 - 🐳 双击桌面「启动 DeepSeek Harness」图标即可使用
@@ -24,12 +39,10 @@ Windows 桌面上的 DeepSeek Harness 一键启动器：**双击图标即可打�
 | `make-icon.ps1` | 重新生成 `icon.ico`（可改颜色） |
 | `使用说明.txt` | 本地使用说明 |
 
-## 使用方法
+## 桌面快捷方式（可选）
 
-1. 把整个文件夹放到任意位置（建议保持文件夹名不变）
-2. 给 `DeepSeek Harness.cmd` 创建快捷方式到桌面，图标指向文件夹里的 `icon.ico`
-   （或直接双击 `DeepSeek Harness.cmd` 使用）
-3. 首次启动需已安装 Node.js（`C:\Program Files\nodejs`）和 DeepSeek Harness
+右键 `DeepSeek Harness.cmd` → 发送到 → 桌面快捷方式；想要鲸鱼图标的话，
+右键快捷方式 → 属性 → 更改图标，指向文件夹里的 `icon.ico`。
 
 ### 配置项（`DeepSeek Harness.cmd` 顶部）
 
