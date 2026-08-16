@@ -1,0 +1,14 @@
+DeepSeek Harness 桌面启动器 使用说明
+====================================
+
+【启动】双击桌面上的「启动 DeepSeek Harness」图标。
+  - 服务未运行时会自动在后台启动（第一次可能要等几秒，之后秒开）；
+  - 默认用 Chrome 独立窗口打开界面，没有地址栏，像桌面应用一样。
+
+【停止】双击本文件夹里的「停止 DeepSeek Harness.cmd」；
+  或者直接关闭任务栏里最小化的「DeepSeek Harness Server」窗口。
+
+【日志】服务日志：C:\Users\luo\.dsh\server.log（启动失败时查看）。
+
+【设置】用记事本打开 DeepSeek Harness.cmd：
+  - APP_MODE=1 → 独立应用窗口；改成 0 → 用默认浏览器标签页打开。
